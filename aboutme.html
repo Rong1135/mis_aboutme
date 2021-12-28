@@ -22,6 +22,26 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+	<script>
+		$(document).ready(function(){
+			$("#PICTURE").click(function(){
+				$("#PICTURE").hide();
+				$("#PICTURE").fadeIn("slow")
+			});
+
+			$("#I").hover(function(){
+				$("#PICTURE").attr("scr","/static/images/family.jpg");
+			});
+
+			$("#PU").hover(function(){
+				$("#PICTURE").attr("scr","/static/images/pu.jpg");
+			});
+
+			$("#CSIM").hover(function(){
+				$("#PICTURE").attr("scr","/static/images/pucsim.jpg");
+			});
+		});
+	</script>
 
 </head>
 <body>
@@ -51,7 +71,7 @@
 	 		/ <a href="http://csim.pu.edu.tw/" class="text-reset text-decoration-none text-white bg-primary" id="CSIM">資訊管理學系</a></h2>
 		</nav>
 
-		<img src="mis2a/static/images/pucsim.jpg" alt="照片" class="img-fluid rounded-circle">
+		<img src="mis2a/static/images/pucsim.jpg" alt="照片" class="img-fluid rounded-circle" id="PICYURE">
 		<br><br><br>
 		
 		<div class="row">
